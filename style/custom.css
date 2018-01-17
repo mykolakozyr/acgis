@@ -1,0 +1,225 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html, body, #map {
+	height: 100%;
+	font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.lorem {
+	font-style: italic;
+	color: #AAA;
+}
+div.image {
+	content:url(https://eurasiangeopolitics.files.wordpress.com/2014/07/political-map-ukraine-regions.png);
+	width: 100%;
+	z-index: 1000;
+	opacity: 0.9;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#myImg_2 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0px;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+/*    background-color: rgba(255,255,255,0.5); /* Black w/ opacity */*/
+	background: -webkit-radial-gradient(circle, yellow, green); /* Safari */
+	background: radial-gradient(white, rgba(255,255,255,0.3), rgba(255,255,255,0)); /* Standard syntax */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	z-index: 2500;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #666666;
+	padding: 10px 0;
+	height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #9e9a9a;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+	.modal-content {
+		width: 100%;
+	}
+}
+
+/*ACCORDEON*/
+button.accordion {
+	background-color: rgba(0,0,0,0.05);
+	color: #444;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+button.accordion.active, button.accordion:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+button.accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+button.accordion.active:after {
+	content: "\2212";
+}
+div.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 5000px;
+	transition: max-height 0.2s ease-out;
+	display: none;
+}
+div.panel.show {
+	display: block !important;
+}
+.padding {
+	height: 30000px;
+}
+#cover {
+	display: none;
+	text-align: center;
+	padding-top: 200px;
+	background: #CCC;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+}
+#cover.active{
+	display: block;
+}
+
+a {
+	color: #0254EB
+}
+a:visited {
+	color: #0254EB
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}
+.more {
+	display: inline-block;
+	margin: 10px;
+	line-height: 150%;
+	font: 9pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#legend {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 1000;
+	margin: 5px;
+	width: 300px
+}
+
+.legend_content {
+	position: relative;
+	width: 100%;
+	padding: 30px;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 5px;
+}
+.leg_clip {
+	/*position: absolute;*/
+	margin-top: 3px;
+	height: 22px;
+	clip: rect(0px,30px,15px,0px);
+}
+.leg_layer_name {
+	/*position: relative;*/
+	width: 80%;
+	padding-left: 3px;
+}
+#basemap {
+	margin-top: 10px;
+	width: 100%;
+	height: 30px;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 5px;
+}
+td:nth-of-type(1) {
+	display: none;
+}
