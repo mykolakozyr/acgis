@@ -19,6 +19,10 @@ map.createPane('indexPanesettlements');
 map.getPane('indexPanesettlements').style.zIndex = 500;
 map.createPane('indexPaneadmin_8');
 map.getPane('indexPaneadmin_8').style.zIndex = 499;
+map.createPane('indexPanelu_industrial');
+map.getPane('indexPanelu_industrial').style.zIndex = 599;
+map.createPane('indexPanelu_farmland');
+map.getPane('indexPanelu_farmland').style.zIndex = 599;
 
 // var lines = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //     maxZoom: 22,
@@ -45,6 +49,19 @@ var points = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
 
 var residential = L.geoJson(residential,{
   pane: 'indexPaneresidential'
+});
+
+var lu_industrial = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
+  layers: 'otg:lu_industrial',
+  format: 'image/png',
+  transparent: true,
+  pane: 'indexPanelu_industrial'
+});
+var lu_farmland = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
+  layers: 'otg:lu_farmland',
+  format: 'image/png',
+  transparent: true,
+  pane: 'indexPanelu_farmland'
 });
 
 // var settlements = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
@@ -77,17 +94,119 @@ $(document).on('click', '#info', (function() {
   if (checkLegend().length !== 0) {
   }
   else {
+    closeAccordion();
+    removeLayers();
+    $("#table").empty();
     addLegInfo();
     points.addTo(map);
     updatePopUp();
   }
 }));
 
-$("#natural").click(function() {
-  closeAccordion();
-  removeLayers();
-  $("#table").empty();
-});
+$(document).on('click', '#natural', (function() {
+  if (checkLegend().length !== 0) {
+  }
+  else {
+    closeAccordion();
+    removeLayers();
+    $("#table").empty();
+    addLegNatural();
+    // points.addTo(map);
+    updatePopUp();
+  }
+}));
+
+$(document).on('click', '#population', (function() {
+  if (checkLegend().length !== 0) {
+  }
+  else {
+    closeAccordion();
+    removeLayers();
+    $("#table").empty();
+    addLegPopulation();
+    // points.addTo(map);
+    updatePopUp();
+  }
+}));
+
+$(document).on('click', '#economy', (function() {
+  if (checkLegend().length !== 0) {
+  }
+  else {
+    closeAccordion();
+    removeLayers();
+    $("#table").empty();
+    addLegEconomy();
+    lu_industrial.addTo(map);
+    lu_farmland.addTo(map);
+    updatePopUp();
+  }
+}));
+
+$(document).on('click', '#humanitarian', (function() {
+  if (checkLegend().length !== 0) {
+  }
+  else {
+    closeAccordion();
+    removeLayers();
+    $("#table").empty();
+    addLegHumanitarian();
+    // points.addTo(map);
+    updatePopUp();
+  }
+}));
+
+$(document).on('click', '#ecology', (function() {
+  if (checkLegend().length !== 0) {
+  }
+  else {
+    closeAccordion();
+    removeLayers();
+    $("#table").empty();
+    addLegEcology();
+    // points.addTo(map);
+    updatePopUp();
+  }
+}));
+
+$(document).on('click', '#security', (function() {
+  if (checkLegend().length !== 0) {
+  }
+  else {
+    closeAccordion();
+    removeLayers();
+    $("#table").empty();
+    addLegSecurity();
+    // points.addTo(map);
+    updatePopUp();
+  }
+}));
+
+$(document).on('click', '#admin', (function() {
+  if (checkLegend().length !== 0) {
+  }
+  else {
+    closeAccordion();
+    removeLayers();
+    $("#table").empty();
+    addLegAdmin();
+    // points.addTo(map);
+    updatePopUp();
+  }
+}));
+
+$(document).on('click', '#development', (function() {
+  if (checkLegend().length !== 0) {
+  }
+  else {
+    closeAccordion();
+    removeLayers();
+    $("#table").empty();
+    addLegDevelopment();
+    // points.addTo(map);
+    updatePopUp();
+  }
+}));
 
 var sidebar = L.control.sidebar('sidebar').addTo(map);
 
@@ -299,7 +418,7 @@ $(document).on('click', 'input', function( event ){
   else{
     map.addLayer(layerClicked);
   };
-  updatePopUp()
+  updatePopUp();
 });
 
 // Update indexes while moving layers inside legend
@@ -385,12 +504,20 @@ function createPopUp() {
   return wmsPopUp
 }
 
-function updatePopUp() {
+var WFSLayer = null;
 
+function updatePopUp() {
+  console.log(WFSLayer);
+  try {
+    map.removeLayer(WFSLayer);
+  }
+  catch (err) {
+    console.log('catched first wfs');
+  }
   var PopUptypeName = createPopUp();
   console.log(PopUptypeName);
 
-  var owsrootUrl = 'http://192.168.1.45:8081/geoserver/ows';
+  var owsrootUrl = 'http://localhost:8080/geoserver/ows';
 
   var defaultParameters = {
       service : 'WFS',
@@ -405,7 +532,6 @@ function updatePopUp() {
   var parameters = L.Util.extend(defaultParameters);
   var URL = owsrootUrl + L.Util.getParamString(parameters);
 
-  var WFSLayer = null;
   var ajax = $.ajax({
       url : URL,
       dataType : 'jsonp',
@@ -421,16 +547,16 @@ function updatePopUp() {
               },
               onEachFeature: function (feature, layer) {
                   popupOptions = {maxWidth: 200};
-                  layer.bindPopup(feature.properties.name
+                  layer.bindPopup(checkLayer(feature)
                       ,popupOptions);
               }
-          }).addTo(map);
+          });
       }
+  })
+  .done(() => {
+    // this code runs after ajax is resolved
+    console.log(WFSLayer);
+    WFSLayer.addTo(map);
+    return WFSLayer;
   });
 }
-
-
-
-$(document).on('change', 'sort', function() {
-  updatePopUp();
-});
