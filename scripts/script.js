@@ -67,7 +67,10 @@ map.createPane('indexPanelu_wetland');
 map.getPane('indexPanelu_wetland').style.zIndex = 600;
 map.createPane('indexPanelu_wood');
 map.getPane('indexPanelu_wood').style.zIndex = 600;
-
+// map.createPane('indexPanesettlements');
+// map.getPane('indexPanesettlements').style.zIndex = 500;
+// map.createPane('indexPaneadmin_8');
+// map.getPane('indexPaneadmin_8').style.zIndex = 450;
 // Industrial
 var lu_industrial = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
   layers: 'otg:lu_industrial',
@@ -231,10 +234,7 @@ var lu_government = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms'
 //   format: 'image/png',
 //   // transparent: true,
 //   pane: 'indexPanesettlements'
-// });
-// console.log(settlements);
-// console.log(map);
-// settlements.addTo(map);
+// }).addTo(map);
 
 // var admin_8 = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
 //   layers: 'otg:admin_8',

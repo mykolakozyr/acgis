@@ -76,7 +76,7 @@ function lu_industrial_popup(feature) {
     return popup;
 };
 function lu_farmland_popup(feature) {
-	var popup = 'Сільськогосподарська земля<br>';
+	var popup = 'Сільськогосподарські угіддя<br>';
     if (feature.properties.name !== null) {
         // console.log('name: ' + feature.properties.name);
         var popup = popup.concat(feature.properties.name + '<br>');

@@ -34,7 +34,7 @@ function addLegEconomy() {
   <tr><td class="index">500</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Кар'єри</td><td><input value="lu_quarry" type="checkbox" id="lu_quarry_box" checked></td></tr>
   <tr><td class="index">500</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сади</td><td><input value="lu_orchard" type="checkbox" id="lu_orchard_box" checked></td></tr>
   <tr><td class="index">500</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сінокоси</td><td><input value="lu_meadow" type="checkbox" id="lu_meadow_box" checked></td></tr>
-  <tr><td class="index">500</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сільськогосподарські землі</td><td><input value="lu_farmland" type="checkbox" id="lu_farmland_box" checked></td></tr>
+  <tr><td class="index">500</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сільськогосподарські угіддя</td><td><input value="lu_farmland" type="checkbox" id="lu_farmland_box" checked></td></tr>
   <tr><td class="index">500</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під С/Г підприємствами (не використовуються)</td><td><input value="lu_brownfield" type="checkbox" id="lu_brownfield_box" checked></td></tr>
   `;
 };
