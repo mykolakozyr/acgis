@@ -9,19 +9,19 @@ map.setMaxZoom(18);
 
 var cover = document.getElementById('cover');
 
-// var settlements = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
-//   layers: 'otg:lines',
-//   format: 'image/png',
-//   transparent: true,
-//   pane: 'indexPanesettlements'
-// }).addTo(map);
+var settlements = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+  layers: 'otg:lines',
+  format: 'image/png',
+  transparent: true,
+  pane: 'indexPanesettlements'
+}).addTo(map);
 
-// var admin_8 = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
-//   layers: 'otg:admin_8',
-//   format: 'image/png',
-//   transparent: true,
-//   pane: 'indexPanesettlements'
-// }).addTo(map);
+var admin_8 = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+  layers: 'otg:admin_8',
+  format: 'image/png',
+  transparent: true,
+  pane: 'indexPanesettlements'
+}).addTo(map);
 
 panel_clicked = '';
 
@@ -121,7 +121,37 @@ $(document).on('click', '#humanitarian', (function() {
     removeLayers();
     $("#table").empty();
     // addLegHumanitarian();
-    // points.addTo(map);
+    pn_atm.addTo(map);
+    pn_bank.addTo(map);
+    pn_beauty.addTo(map);
+    pn_cafe.addTo(map);
+    pn_clock.addTo(map);
+    pn_clothes.addTo(map);
+    pn_doctors.addTo(map);
+    pn_electronics.addTo(map);
+    pn_emergency.addTo(map);
+    pn_fap.addTo(map);
+    pn_fitness.addTo(map);
+    pn_grocery.addTo(map);
+    pn_haircut.addTo(map);
+    pn_homeshop.addTo(map);
+    pn_kids.addTo(map);
+    pn_kpndergarten.addTo(map);
+    pn_library.addTo(map);
+    pn_lotery.addTo(map);
+    pn_monument.addTo(map);
+    pn_pharmacy.addTo(map);
+    pn_picnic.addTo(map);
+    pn_pnsurance.addTo(map);
+    pn_repair.addTo(map);
+    pn_schoolsport.addTo(map);
+    pn_serv_org_sector.addTo(map);
+    pn_serv_org.addTo(map);
+    pn_shop_build.addTo(map);
+    pn_shop.addTo(map);
+    pn_special.addTo(map);
+    pn_sport_general.addTo(map);
+    
     updatePopUp();
     panel_clicked = this.id;
     return panel_clicked;
