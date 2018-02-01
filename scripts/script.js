@@ -120,7 +120,7 @@ $(document).on('click', '#humanitarian', (function() {
     closeAccordion();
     removeLayers();
     $("#table").empty();
-    // addLegHumanitarian();
+    addLegHumanitarian();
     pn_atm.addTo(map);
     pn_bank.addTo(map);
     pn_beauty.addTo(map);
@@ -151,7 +151,45 @@ $(document).on('click', '#humanitarian', (function() {
     pn_shop.addTo(map);
     pn_special.addTo(map);
     pn_sport_general.addTo(map);
-    
+    in_bank.addTo(map);
+    in_cafe.addTo(map);
+    in_clothes.addTo(map);
+    in_community_centre.addTo(map);
+    in_doctors.addTo(map);
+    in_dormitory.addTo(map);
+    in_electronics.addTo(map);
+    in_events_venue.addTo(map);
+    in_funeral_directors.addTo(map);
+    in_furniture.addTo(map);
+    in_grocery.addTo(map);
+    in_health.addTo(map);
+    in_homeshop.addTo(map);
+    in_hospital.addTo(map);
+    in_hotel.addTo(map);
+    in_hypermarket.addTo(map);
+    in_kids.addTo(map);
+    in_kindergarten.addTo(map);
+    in_library.addTo(map);
+    in_market.addTo(map);
+    in_minimarket.addTo(map);
+    in_museum.addTo(map);
+    in_orthodox.addTo(map);
+    in_park.addTo(map);
+    in_pharmacy.addTo(map);
+    in_preschool.addTo(map);
+    in_resort.addTo(map);
+    in_sacral.addTo(map);
+    in_school.addTo(map);
+    in_school_notfull.addTo(map);
+    in_schoolsport.addTo(map);
+    in_serv_org.addTo(map);
+    in_shop.addTo(map);
+    in_shop_build.addTo(map);
+    in_special.addTo(map);
+    in_sport.addTo(map);
+    in_sport_general.addTo(map);
+    in_stadium.addTo(map);
+
     updatePopUp();
     panel_clicked = this.id;
     return panel_clicked;
@@ -447,7 +485,7 @@ function removeLayers () {
 
   $.each( items, function(i, item){
       var layer = window[item];
-      console.log(item);
+      // console.log(item);
       map.removeLayer(layer);
   })
 }
@@ -573,6 +611,7 @@ function updatePopUp() {
           WFSLayer = L.geoJson(response, {
               style: function (feature) {
                   return {
+                      opacity: 0,
                       stroke: false,
                       fillColor: 'FFFFFF',
                       fillOpacity: 0

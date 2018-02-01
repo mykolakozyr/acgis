@@ -1081,6 +1081,562 @@ function lu_wood_popup(feature) {
     // console.log(popup)
     return popup;
 };
+
+function lu_industrial_popup(feature) {
+    var popup = 'Виробнича територія<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    // console.log(popup)
+    return popup;
+};
+function pn_atm_popup(feature) {
+    var popup = 'банкомати<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_bank_popup(feature) {
+    var popup = 'банки (відділення)<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_beauty_popup(feature) {
+    var popup = 'салони краси<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_cafe_popup(feature) {
+    var popup = 'кафе<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_clock_popup(feature) {
+    var popup = 'годинників<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_clothes_popup(feature) {
+    var popup = 'одяг, взуття<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_doctors_popup(feature) {
+    var popup = 'амбулаторії<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_electronics_popup(feature) {
+    var popup = 'побутової електроніки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_emergency_popup(feature) {
+    var popup = 'заклади надання невідкладної медичної допомоги<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_fap_popup(feature) {
+    var popup = 'фельдшерско-акушерскі пункти<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_fitness_popup(feature) {
+    var popup = 'тренажерні зали<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_grocery_popup(feature) {
+    var popup = 'продовольчі<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_haircut_popup(feature) {
+    var popup = 'перукарні <br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_homeshop_popup(feature) {
+    var popup = 'господарчі<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_kids_popup(feature) {
+    var popup = 'дитячі<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_kpndergarten_popup(feature) {
+    var popup = 'дитячі садки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_library_popup(feature) {
+    var popup = 'бібліотеки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_lotery_popup(feature) {
+    var popup = 'лотереї<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_monument_popup(feature) {
+    var popup = 'монументи<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_pharmacy_popup(feature) {
+    var popup = 'аптеки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_picnic_popup(feature) {
+    var popup = 'місця відпочинку<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_pnsurance_popup(feature) {
+    var popup = 'страхові компанії<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_repair_popup(feature) {
+    var popup = 'побутовий ремонт<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_schoolsport_popup(feature) {
+    var popup = 'дитячо-юнацькі спортивні школи<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_serv_org_popup(feature) {
+    var popup = 'комунальні господарства<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_serv_org_sector_popup(feature) {
+    var popup = 'філія<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_shop_popup(feature) {
+    var popup = 'магазини<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_shop_build_popup(feature) {
+    var popup = 'будівельні матеріали<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_special_popup(feature) {
+    var popup = 'спеціалізовані<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function pn_sport_general_popup(feature) {
+    var popup = 'загальні<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+
+function in_bank_popup(feature) {
+    var popup = 'банки (відділення)<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_cafe_popup(feature) {
+    var popup = 'кафе<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_clothes_popup(feature) {
+    var popup = 'одяг, взуття<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_community_centre_popup(feature) {
+    var popup = 'будинки культури (клуби, народні будинки)<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_doctors_popup(feature) {
+    var popup = 'амбулаторії<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_dormitory_popup(feature) {
+    var popup = 'гуртожитки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_electronics_popup(feature) {
+    var popup = 'побутової електроніки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_events_venue_popup(feature) {
+    var popup = 'поминальні будинки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_funeral_directors_popup(feature) {
+    var popup = 'ритуальні послуги<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_furniture_popup(feature) {
+    var popup = 'меблеві<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_grocery_popup(feature) {
+    var popup = 'продовольчі<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_health_popup(feature) {
+    var popup = "охорона здоров'я<br>";
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_homeshop_popup(feature) {
+    var popup = 'господарчі<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_hospital_popup(feature) {
+    var popup = 'полілініки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_hotel_popup(feature) {
+    var popup = 'готелі<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_hypermarket_popup(feature) {
+    var popup = 'гіпермаркети<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_kids_popup(feature) {
+    var popup = 'дитячі<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_kindergarten_popup(feature) {
+    var popup = 'дитячі садки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_library_popup(feature) {
+    var popup = 'бібліотеки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_market_popup(feature) {
+    var popup = 'ринки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_minimarket_popup(feature) {
+    var popup = 'мінімаркети<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_museum_popup(feature) {
+    var popup = 'музеї<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_orthodox_popup(feature) {
+    var popup = 'православні<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_park_popup(feature) {
+    var popup = 'парки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_pharmacy_popup(feature) {
+    var popup = 'аптеки<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_preschool_popup(feature) {
+    var popup = 'початкова<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_resort_popup(feature) {
+    var popup = 'санаторії<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_sacral_popup(feature) {
+    var popup = "релігійні та сакральні об'єкти<br>";
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_school_popup(feature) {
+    var popup = 'повна середня<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_school_notfull_popup(feature) {
+    var popup = 'середня<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_schoolsport_popup(feature) {
+    var popup = 'дитячо-юнацькі спортивні школи<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_serv_org_popup(feature) {
+    var popup = 'комунальні господарства<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_shop_popup(feature) {
+    var popup = 'магазини<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_shop_build_popup(feature) {
+    var popup = 'будівельні матеріали<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_special_popup(feature) {
+    var popup = 'спеціалізовані<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_sport_popup(feature) {
+    var popup = 'спортивні споруди<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_sport_general_popup(feature) {
+    var popup = 'загальні<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+function in_stadium_popup(feature) {
+    var popup = 'стадіони<br>';
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    return popup;
+};
+
 function checkLayer(feature) {
 	var longName = feature.id;
 	var layerName = longName.split(".")[0];

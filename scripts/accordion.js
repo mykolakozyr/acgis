@@ -1,11 +1,11 @@
 // CLICK ON BUTTONS
-function info_1_func(){
-  removeLayers()
-  $("#lines_box").prop("checked", true);
-  lines.addTo(map);
-  $("#points_box").prop("checked", false);
-  $("#residential_box").prop("checked", false);
-}
+// function info_1_func(){
+//   removeLayers()
+//   $("#lines_box").prop("checked", true);
+//   lines.addTo(map);
+//   $("#points_box").prop("checked", false);
+//   $("#residential_box").prop("checked", false);
+// }
 
 // CLICK ON BUTTONS
 function economy_1_func(){
