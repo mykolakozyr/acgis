@@ -81,35 +81,33 @@ function addLegDevelopment() {
   var table = document.getElementById("table");
   var row = table.insertRow(0);
   row.outerHTML = `
-  <tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під сг підприємствами (не використовуються)</td><td><input value="brownfield" type="checkbox" id="brownfield_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі комеційного призначення</td><td><input value="commercial" type="checkbox" id="commercial_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами культури</td><td><input value="culture" type="checkbox" id="culture_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами освіти</td><td><input value="education" type="checkbox" id="education_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сільськогосподарські землі</td><td><input value="farmland" type="checkbox" id="farmland_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під сг підприємствами</td><td><input value="farmyard" type="checkbox" id="farmyard_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Багаторічні насадження</td><td><input value="forest" type="checkbox" id="forest_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">адміністративними будівлями</td><td><input value="government" type="checkbox" id="government_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Лучна рослинність</td><td><input value="grassland" type="checkbox" id="grassland_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами охорони здоров'я</td><td><input value="health" type="checkbox" id="health_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під транспортною інфраструктурою</td><td><input value="highway" type="checkbox" id="highway_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі історико-культурного значення</td><td><input value="historic" type="checkbox" id="historic_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Виробничі території</td><td><input value="industrial" type="checkbox" id="industrial_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сміттєзвалища</td><td><input value="landfill" type="checkbox" id="landfill_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">рекреаційного призначення</td><td><input value="leisure" type="checkbox" id="leisure_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сінокоси</td><td><input value="meadow" type="checkbox" id="meadow_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name"></td><td><input value="military" type="checkbox" id="military_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сади</td><td><input value="orchard" type="checkbox" id="orchard_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name"></td><td><input value="other" type="checkbox" id="other_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Кар'єри</td><td><input value="quarry" type="checkbox" id="quarry_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Територія під житловою забудовою</td><td><input value="residential" type="checkbox" id="residential_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами сакрального значення</td><td><input value="sacral" type="checkbox" id="sacral_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Чагарники</td><td><input value="scrub" type="checkbox" id="scrub_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами безпеки</td><td><input value="security" type="checkbox" id="security_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами обслуговування населення</td><td><input value="serv_org" type="checkbox" id="serv_org_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі туристичного призначення</td><td><input value="tourism" type="checkbox" id="tourism_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Водні об'єкти</td><td><input value="water" type="checkbox" id="water_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Болота</td><td><input value="wetland" type="checkbox" id="wetland_box" checked></td></tr>
-<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Лісовий фонд</td><td><input value="wood" type="checkbox" id="wood_box" checked></td></tr>
+  <tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під сг підприємствами (не використовуються)</td><td><input value="lu_brownfield" type="checkbox" id="lu_brownfield_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі комеційного призначення</td><td><input value="lu_commercial" type="checkbox" id="lu_commercial_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами культури</td><td><input value="lu_culture" type="checkbox" id="lu_culture_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами освіти</td><td><input value="lu_education" type="checkbox" id="lu_education_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сільськогосподарські землі</td><td><input value="lu_farmland" type="checkbox" id="lu_farmland_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під сг підприємствами</td><td><input value="lu_farmyard" type="checkbox" id="lu_farmyard_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Багаторічні насадження</td><td><input value="lu_forest" type="checkbox" id="lu_forest_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під адміністративними будівлями</td><td><input value="lu_government" type="checkbox" id="lu_government_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Лучна рослинність</td><td><input value="lu_grassland" type="checkbox" id="lu_grassland_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами охорони здоров'я</td><td><input value="lu_health" type="checkbox" id="lu_health_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під транспортною інфраструктурою</td><td><input value="lu_highway" type="checkbox" id="lu_highway_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі історико-культурного значення</td><td><input value="lu_historic" type="checkbox" id="lu_historic_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Виробничі території</td><td><input value="lu_industrial" type="checkbox" id="lu_industrial_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сміттєзвалища</td><td><input value="lu_landfill" type="checkbox" id="lu_landfill_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі рекреаційного призначення</td><td><input value="lu_leisure" type="checkbox" id="lu_leisure_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сінокоси</td><td><input value="lu_meadow" type="checkbox" id="lu_meadow_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Сади</td><td><input value="lu_orchard" type="checkbox" id="lu_orchard_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Кар'єри</td><td><input value="lu_quarry" type="checkbox" id="lu_quarry_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Територія під житловою забудовою</td><td><input value="lu_residential" type="checkbox" id="lu_residential_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами сакрального значення</td><td><input value="lu_sacral" type="checkbox" id="lu_sacral_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Чагарники</td><td><input value="lu_scrub" type="checkbox" id="lu_scrub_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами безпеки</td><td><input value="lu_security" type="checkbox" id="lu_security_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі під об'єктами обслуговування населення</td><td><input value="lu_serv_org" type="checkbox" id="lu_serv_org_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Землі туристичного призначення</td><td><input value="lu_tourism" type="checkbox" id="lu_tourism_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Водні об'єкти</td><td><input value="lu_water" type="checkbox" id="lu_water_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Болота</td><td><input value="lu_wetland" type="checkbox" id="lu_wetland_box" checked></td></tr>
+<tr><td class="index">498</td><td class="leg_clip"><img src="imgs/temp.png"></td><td class="leg_layer_name">Лісовий фонд</td><td><input value="lu_wood" type="checkbox" id="lu_wood_box" checked></td></tr>
   `;
 };
 

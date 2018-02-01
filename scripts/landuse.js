@@ -59,7 +59,7 @@ map.getPane('indexPanelu_wood').style.zIndex = 600;
 map.createPane('indexPanelu_cemetery');
 map.getPane('indexPanelu_cemetery').style.zIndex = 600;
 map.createPane('indexPanelu_residential_high');
-map.getPane('indexPanelu_residential_high').style.zIndex = 600;
+map.getPane('indexPanelu_residential_high').style.zIndex = 630;
 map.createPane('indexPanesettlements');
 map.getPane('indexPanesettlements').style.zIndex = 500;
 map.createPane('indexPaneadmin_8');

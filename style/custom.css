@@ -192,7 +192,7 @@ a.morelink {
 	top: 20px;
 	z-index: 1000;
 	margin: 5px;
-	height: 80%;
+	height: 90%;
 	overflow:auto;
     overflow-x:hidden;
 	width: 300px
@@ -202,7 +202,7 @@ a.morelink {
 	position: relative;
 	width: 100%;
 	padding: 30px;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.8);
 	border-radius: 5px;
 }
 .leg_clip {
