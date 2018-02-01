@@ -19,6 +19,8 @@ function economy_1_func(){
   $("#lu_farmyard_box").prop("checked", false);
   $("#lu_industrial_box").prop("checked", true);
   lu_industrial.addTo(map);
+  $("#lu_forest_box").prop("checked", false);
+  $("#lu_highway_box").prop("checked", false);
 }
 
 function economy_2_func(){
@@ -35,14 +37,32 @@ function economy_2_func(){
   $("#lu_farmyard_box").prop("checked", true);
   lu_farmyard.addTo(map);
   $("#lu_industrial_box").prop("checked", false);
+  $("#lu_forest_box").prop("checked", false);
+  $("#lu_highway_box").prop("checked", false);
 }
-
-
-
-    // lu_brownfield.addTo(map);
-    // lu_farmland.addTo(map);
-    // lu_meadow.addTo(map);
-    // lu_orchard.addTo(map);
-    // lu_quarry.addTo(map);
-    // lu_farmyard.addTo(map);
-    // lu_industrial.addTo(map);
+function economy_3_func(){
+  removeLayers()
+  $("#lu_brownfield_box").prop("checked", false);
+  $("#lu_farmland_box").prop("checked", false);
+  $("#lu_meadow_box").prop("checked", false);
+  $("#lu_orchard_box").prop("checked", false);
+  $("#lu_quarry_box").prop("checked", false);
+  $("#lu_farmyard_box").prop("checked", false);
+  $("#lu_industrial_box").prop("checked", false);
+  $("#lu_forest_box").prop("checked", true);
+  lu_forest.addTo(map);
+  $("#lu_highway_box").prop("checked", false);
+}
+function economy_4_func(){
+  removeLayers()
+  $("#lu_brownfield_box").prop("checked", false);
+  $("#lu_farmland_box").prop("checked", false);
+  $("#lu_meadow_box").prop("checked", false);
+  $("#lu_orchard_box").prop("checked", false);
+  $("#lu_quarry_box").prop("checked", false);
+  $("#lu_farmyard_box").prop("checked", false);
+  $("#lu_industrial_box").prop("checked", false);
+  $("#lu_forest_box").prop("checked", false);
+  $("#lu_highway_box").prop("checked", true);
+  lu_highway.addTo(map);
+}

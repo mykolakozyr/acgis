@@ -26,7 +26,8 @@
     <!-- SideBar -->
     <script src="lib/sidebar-v2/js/leaflet-sidebar.js"></script> 
     <link rel="stylesheet" href="lib/sidebar-v2/css/leaflet-sidebar.css" />
-    <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet"> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -40,20 +41,20 @@
         <!-- Nav tabs -->
         <div class="sidebar-tabs">
             <ul role="tablist">
-                <li><a href="#home" role="tab"><i class="fa fa-bars fa-lg"></i></a></li>
-                <li><a id="info" href="#info" role="tab"><i class="fa fa-address-card-o fa-lg" aria-hidden="true"></i></a></li>
-                <li><a id="natural" href="#natural" role="tab"><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+                <li><a id="info" href="#info" role="tab"><i class="far fa-address-card fa-lg aria-hidden="true"></i></a></li>
+                <li><a id="natural" href="#natural" role="tab"><i class="fas fa-image fa-lg" aria-hidden="true"></i></a></li>
                 <li><a id="population" href="#population" role="tab"><i class="fa fa-users fa-lg"></i></a></li>
-                <li><a id="economy" href="#economy" role="tab"><i class="fa fa-pie-chart fa-lg"></i></a></li>
+                <li><a id="economy" href="#economy" role="tab"><i class="fas fa-chart-pie fa-lg"></i></a></li>
                 <li><a id="humanitarian" href="#humanitarian" role="tab"><i class="fa fa-graduation-cap fa-lg"></i></a></li>
                 <li><a id="ecology" href="#ecology" role="tab"><i class="fa fa-leaf fa-lg"></i></a></li>
-                <li><a id="security" href="#security" role="tab"><i class="fa fa-shield fa-lg"></i></a></li>
-                <li><a id="admin" href="#admin" role="tab"><i class="fa fa-hand-o-up fa-lg"></i></a></li>
+                <li><a id="security" href="#security" role="tab"><i class="fas fa-shield-alt fa-lg"></i></a></li>
+                <li><a id="admin" href="#admin" role="tab"><i class="far fa-hand-point-up fa-lg"></i></a></li>
                 <li><a id="development" href="#development" role="tab"><i class="fa fa-arrows-alt fa-lg"></i></a></li>
             </ul>
 
             <ul role="tablist">
-                <li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+                <li><a href="#settings" role="tab"><i class="fa fa-cog"></i></a></li>
             </ul>
         </div>
 
@@ -830,7 +831,7 @@
     <div id="map" class="sidebar-map"></div>
     <div id=legend>
         <div class="legend_content">
-            <h4>Layer Control</h4>
+            <h4>Легенда</h4>
             <table id="sort" class="grid">
                 <thead>
                     <tr><th class="index"> </th><th> </th><th class="leg_layer_name"> </th><th> </th></tr>
@@ -857,12 +858,12 @@
             </select>
         </div>
     </div>
-    <button id="download">download</button>
+    <!-- <button id="download">download</button>
     <button onclick="myCreateFunction()">Create row</button>
     <button onclick="removeLayers()">Remove Layers</button>
     <button onclick="updateIndexes()">Update Indexes</button>
     <button onclick="closeAccordion()">Close Accordion</button>
-    <button onclick="updatePopUp()">Check Layers on</button>
+    <button onclick="updatePopUp()">Check Layers on</button> -->
     <script>
         var map = L.map('map',{
           preferCanvas: true
@@ -870,6 +871,7 @@
     </script>
     <script src="scripts/basemaps.js"></script>
     <script src="scripts/layers.js"></script>
+    <script src="scripts/landuse.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/get_data.js"></script>
     <script src="scripts/accordion.js"></script>

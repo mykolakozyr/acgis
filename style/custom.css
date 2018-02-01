@@ -192,6 +192,9 @@ a.morelink {
 	top: 20px;
 	z-index: 1000;
 	margin: 5px;
+	height: 80%;
+	overflow:auto;
+    overflow-x:hidden;
 	width: 300px
 }
 
@@ -210,8 +213,10 @@ a.morelink {
 }
 .leg_layer_name {
 	/*position: relative;*/
-	width: 80%;
-	padding-left: 3px;
+	width: 95%;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 14px;
 }
 #basemap {
 	margin-top: 10px;

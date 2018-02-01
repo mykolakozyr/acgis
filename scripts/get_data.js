@@ -76,6 +76,7 @@ function lu_industrial_popup(feature) {
     return popup;
 };
 function lu_farmland_popup(feature) {
+	console.log(feature);
 	var popup = 'Сільськогосподарські угіддя<br>';
     if (feature.properties.name !== null) {
         // console.log('name: ' + feature.properties.name);
@@ -302,6 +303,81 @@ function lu_quarry_popup(feature) {
     return popup;
 };
 
+function lu_forest_popup(feature) {
+	var popup = "Багаторічні насадження<br>";
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    if (feature.properties.cad_id !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Кадастровий номер: ' + feature.properties.cad_id + '<br>');
+    }
+    if (feature.properties.prop_type !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = lu_prop_type(feature, popup);
+    }
+    if (feature.properties.area_doc !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Площа кадастрової одиниці: ' + feature.properties.area_doc + '<br>');
+    }
+    if (feature.properties.basis !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Резервна територія<br>');
+    }
+    if (feature.properties.owner !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Власник: ' + feature.properties.owner + '<br>');
+    }
+    if (feature.properties.user !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Користувач: ' + feature.properties.user + '<br>');
+    }
+    if (feature.properties.lease_end !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Дата завершення дії договору: ' + feature.properties.lease_end + '<br>');
+    }
+    // console.log(popup)
+    return popup;
+};
+
+function lu_highway_popup(feature) {
+	var popup = "Землі під транспортною інфраструктурою<br>";
+    if (feature.properties.name !== null) {
+        // console.log('name: ' + feature.properties.name);
+        var popup = popup.concat(feature.properties.name + '<br>');
+    }
+    if (feature.properties.cad_id !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Кадастровий номер: ' + feature.properties.cad_id + '<br>');
+    }
+    if (feature.properties.prop_type !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = lu_prop_type(feature, popup);
+    }
+    if (feature.properties.area_doc !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Площа ділянки за документацією: ' + feature.properties.area_doc + '<br>');
+    }
+    if (feature.properties.basis !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Резервна територія<br>');
+    }
+    if (feature.properties.owner !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Власник: ' + feature.properties.owner + '<br>');
+    }
+    if (feature.properties.user !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Користувач: ' + feature.properties.user + '<br>');
+    }
+    if (feature.properties.lease_end !== null) {
+        // console.log('type_id: ' + feature.properties.type_id);
+        var popup = popup.concat('Дата завершення дії договору: ' + feature.properties.lease_end + '<br>');
+    }
+    // console.log(popup)
+    return popup;
+};
 function checkLayer(feature) {
 	var longName = feature.id;
 	var layerName = longName.split(".")[0];
