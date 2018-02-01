@@ -41,7 +41,7 @@ panel_clicked = '';
 
 $(document).on('click', '#info', (function() {
   if (this.id == panel_clicked) {
-    console.log('second click')
+    // console.log('second click')
   }
   else {
     closeAccordion();
@@ -58,7 +58,7 @@ $(document).on('click', '#info', (function() {
 
 $(document).on('click', '#natural', (function() {
   if (this.id == panel_clicked) {
-    console.log('second click')
+    // console.log('second click')
   }
   else {
     closeAccordion();
@@ -73,20 +73,24 @@ $(document).on('click', '#natural', (function() {
 }));
 
 $(document).on('click', '#population', (function() {
-  if (checkLegend().length == 0) {
+  if (this.id == panel_clicked) {
+    // console.log('second click')
   }
   else {
     closeAccordion();
     removeLayers();
     $("#table").empty();
-    addLegPopulation();
+    // addLegPopulation();
     // points.addTo(map);
     updatePopUp();
+    panel_clicked = this.id;
+    return panel_clicked;
   }
 }));
 
 $(document).on('click', '#economy', (function() {
-  if (checkLegend().length == 0) {
+  if (this.id == panel_clicked) {
+    // console.log('second click')
   }
   else {
     closeAccordion();
@@ -103,64 +107,78 @@ $(document).on('click', '#economy', (function() {
     lu_forest.addTo(map);
     lu_highway.addTo(map);
     updatePopUp();
+    panel_clicked = this.id;
+    return panel_clicked;
   }
 }));
 
 $(document).on('click', '#humanitarian', (function() {
-  if (checkLegend().length !== 0) {
+  if (this.id == panel_clicked) {
+    // console.log('second click')
   }
   else {
     closeAccordion();
     removeLayers();
     $("#table").empty();
-    addLegHumanitarian();
+    // addLegHumanitarian();
     // points.addTo(map);
     updatePopUp();
+    panel_clicked = this.id;
+    return panel_clicked;
   }
 }));
 
 $(document).on('click', '#ecology', (function() {
-  if (checkLegend().length !== 0) {
+  if (this.id == panel_clicked) {
+    // console.log('second click')
   }
   else {
     closeAccordion();
     removeLayers();
     $("#table").empty();
-    addLegEcology();
+    // addLegEcology();
     // points.addTo(map);
     updatePopUp();
+    panel_clicked = this.id;
+    return panel_clicked;
   }
 }));
 
 $(document).on('click', '#security', (function() {
-  if (checkLegend().length !== 0) {
+  if (this.id == panel_clicked) {
+    // console.log('second click')
   }
   else {
     closeAccordion();
     removeLayers();
     $("#table").empty();
-    addLegSecurity();
+    // addLegSecurity();
     // points.addTo(map);
     updatePopUp();
+    panel_clicked = this.id;
+    return panel_clicked;
   }
 }));
 
 $(document).on('click', '#admin', (function() {
-  if (checkLegend().length !== 0) {
+  if (this.id == panel_clicked) {
+    // console.log('second click')
   }
   else {
     closeAccordion();
     removeLayers();
     $("#table").empty();
-    addLegAdmin();
+    // addLegAdmin();
     // points.addTo(map);
     updatePopUp();
+    panel_clicked = this.id;
+    return panel_clicked;
   }
 }));
 
 $(document).on('click', '#development', (function() {
-  if (checkLegend().length !== 0) {
-    console.log('legend is empty')
+  if (this.id == panel_clicked) {
+    // console.log('second click')
   }
   else {
     closeAccordion();
@@ -197,6 +215,8 @@ $(document).on('click', '#development', (function() {
     lu_cemetery.addTo(map);
     lu_residential_high.addTo(map);
     updatePopUp();
+    panel_clicked = this.id;
+    return panel_clicked;
   }
 }));
 
