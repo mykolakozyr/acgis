@@ -9,14 +9,14 @@ map.setMaxZoom(18);
 
 var cover = document.getElementById('cover');
 
-var settlements = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var settlements = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lines',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanesettlements'
 }).addTo(map);
 
-var admin_8 = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var admin_8 = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:admin_8',
   format: 'image/png',
   transparent: true,
@@ -588,7 +588,7 @@ function updatePopUp() {
   var PopUptypeName = createPopUp();
   console.log(PopUptypeName);
 
-  var owsrootUrl = 'http://192.168.1.45:8081/geoserver/ows';
+  var owsrootUrl = 'http://localhost:8080/geoserver/ows';
 
   var defaultParameters = {
       service : 'WFS',

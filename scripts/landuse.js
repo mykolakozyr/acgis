@@ -65,13 +65,13 @@ map.getPane('indexPanesettlements').style.zIndex = 500;
 map.createPane('indexPaneadmin_8');
 map.getPane('indexPaneadmin_8').style.zIndex = 450;
 //Industrial
-var lu_industrial = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_industrial = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_industrial',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_industrial'
 });
-var lu_quarry = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_quarry = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_quarry',
   format: 'image/png',
   transparent: true,
@@ -79,185 +79,185 @@ var lu_quarry = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
 });
 
 // Agriculture
-var lu_farmland = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_farmland = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_farmland',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_farmland'
 });
-var lu_farmyard = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_farmyard = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_farmyard',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_farmyard'
 });
-var lu_meadow = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_meadow = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_meadow',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_meadow'
 });
-var lu_orchard = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_orchard = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_orchard',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_orchard'
 });
-var lu_brownfield = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_brownfield = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_brownfield',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_brownfield'
 });
 //Promysly
-var lu_forest = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_forest = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_forest',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_forest'
 });
 //Highway
-var lu_highway = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_highway = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_highway',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_highway'
 });
 //Education
-var lu_education = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_education = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_education',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_education'
 });
 //Health
-var lu_health = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_health = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_health',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_health'
 });
 //Sport
-var lu_sport = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_sport = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_sport',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_sport'
 });
 //Culture
-var lu_culture = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_culture = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_culture',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_culture'
 });
 //Sacral
-var lu_sacral = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_sacral = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_sacral',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_sacral'
 });
-var lu_cemetery = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_cemetery = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_cemetery',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_cemetery'
 });
 //residential
-var lu_residential_high = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_residential_high = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_residential_high',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_residential_high'
 });
-var lu_residential = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_residential = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_residential',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_residential'
 });
 //serv_org
-var lu_serv_org = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_serv_org = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_serv_org',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_serv_org'
 });
 //historic
-var lu_historic = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_historic = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_historic',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_historic'
 });
 //leisure
-var lu_leisure = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_leisure = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_leisure',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_leisure'
 });
 //tourism
-var lu_tourism = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_tourism = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_tourism',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_tourism'
 });
 //commercial
-var lu_commercial = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_commercial = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_commercial',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_commercial'
 });
 //landfill
-var lu_landfill = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_landfill = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_landfill',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_landfill'
 });
 //security
-var lu_security = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_security = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_security',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_security'
 });
 //government
-var lu_government = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_government = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_government',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_government'
 });
-var lu_grassland = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_grassland = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_grassland',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_grassland'
 });
-var lu_scrub = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_scrub = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_scrub',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_scrub'
 });
-var lu_water = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_water = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_water',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_water'
 });
-var lu_wetland = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_wetland = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_wetland',
   format: 'image/png',
   transparent: true,
   pane: 'indexPanelu_wetland'
 });
-var lu_wood = L.tileLayer.wms('http://192.168.1.45:8081/geoserver/otg/wms', {
+var lu_wood = L.tileLayer.wms('http://localhost:8080/geoserver/otg/wms', {
   layers: 'otg:lu_wood',
   format: 'image/png',
   transparent: true,
